@@ -20,12 +20,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const productsTableContent = document.getElementById("products-content");
 
     const newProduct = {
-      id: generateId(0, 999),
+      id: parseInt(generateId(0, 999)),
       name: productValue,
       price: priceValue,
       tax: ivaValue,
       total: priceValue * (1 + ivaValue / 100),
-      createdAt: `${Date.now()}`,
+      createdAt: `${new Date().getDate()}/${new Date().getMonth()}/${new Date().getFullYear()}`,
     };
     const productRow = document.createElement("tr");
     productRow.innerHTML = `
