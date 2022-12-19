@@ -19,11 +19,40 @@ body {
 /* Your Styles */
 .wrapper {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .main-title {
   display: inline-flex;
-  justify-: center;
   margin-bottom: 8px;
   border-bottom: 1px solid #000;
   width: auto;
+}
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.form-group input {
+  margin-left: 16px;
+  padding: 4px 8px;
+  outline: none;
+  background-color: lightblue;
+  color: black;
+}
+
+.btn {
+  padding: 8px 16px;
+  border-radius: 999px;
+  outline: none;
+}
+
+form > .btn-submit {
+  display: block;
+  margin-top: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}

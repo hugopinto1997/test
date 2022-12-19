@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
     const productRow = document.createElement("tr");
     productRow.innerHTML = `
-            <td>${newProduct.id} 12</td>
+            <td>${newProduct.id}</td>
             <td>${newProduct.name}</td>
             <td>$${newProduct.price}</td>
             <td>${newProduct.tax}%</td>
